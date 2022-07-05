@@ -13,7 +13,7 @@ public class Common_Steps {
 	@Before(order = 1)
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/gbhowmik/eclipse-workspace/cucumber1/Driver/chromedriver");
+				System.getProperty("user.dir")+"//Driver//chromedriver");
 		driver = new ChromeDriver();
 		System.out.println("Global before executed");
 	}
